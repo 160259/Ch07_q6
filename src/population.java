@@ -20,19 +20,16 @@ public class population {
 
 		System.out.print("Enter your target population (in millions): ");
 		double tgtPop = Double.parseDouble(kboard.nextLine());
-		// make a while loop, check if current populat exceed target population
+		// make a while loop, check if current population exceed target population
 		int year = 2014;
 		while (pop <= tgtPop)
 		{
 			// if not, update the new population and increment year
-
 			pop = newPop(pop,rate);
 			year++;
 
 			System.out.print("Year: " + year + "  ");
-			System.out.println("Population: " + pop + " millions");
-
-		
+			System.out.println("Population: " + pop + " millions.");
 		}
 		// after while loop break => population > target population
 		// print out the year (year) and the current population
